@@ -1,9 +1,8 @@
 datasource db {
   provider = "postgresql"
-  url      = env("postgres://myncutferyjzwf:8dd9b9911429aee327f3d9ed4bf032eb194ef6bf8043e88519663b556a2e32d3@ec2-44-196-223-128.compute-1.amazonaws.com:5432/d8icvmgmros8t0")
+  url      = env("DATABASE_URL")
 }
 
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["dataProxy"]
 }
